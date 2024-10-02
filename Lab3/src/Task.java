@@ -1,11 +1,11 @@
-public class Main {
+public class Task {
     private double m;
     private int k;
 
-    // Конструктор класу
-    public Main(double m, int k) {
+
+    public Task(double m, int k) {
         this.m = m;
-        this.k = k <= 30 ? k : 30; // Перевірка, щоб k не перевищував 30
+        this.k = k <= 30 ? k : 30;
     }
 
     // Метод для обчислення суми ряду
@@ -24,9 +24,9 @@ public class Main {
         int k = 30;
 
         // Створення об'єкту класу
-        Main seriesSum = new Main(m, k);
+        Task seriesSum = new Task(m, k);
 
-        // Обчислення та виведення суми
+
         double result = seriesSum.calculateSum();
         System.out.println("Сума ряду: " + result);
     }
